@@ -2,6 +2,10 @@ import unittest
 import statistics
 
 class StatsTest(unittest.TestCase):
+  def EmailAlert():
+    print("Email alert incoming")
+  def LEDAlert():
+    print("LED alert incoming")
   def test_report_min_max_avg(self):
     computedStats = statistics.calculateStats([1.5, 8.9, 3.2, 4.5])
     epsilon = 0.001
