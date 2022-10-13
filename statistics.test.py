@@ -39,9 +39,9 @@ class StatsTest(unittest.TestCase):
     # Design the assert here.
     # Use nan and isnan in https://docs.python.org/3/library/math.html
     computedStats = statistics.calculateStats([])
-    self.assertAlmostEqual(computedStats["avg"], math.nan)
-    self.assertAlmostEqual(computedStats["max"], math.nan)
-    self.assertAlmostEqual(computedStats["min"], math.nan)
+    self.assertTrue(math.isnan(computedStats["avg"]))
+    self.assertTrue(math.isnan(computedStats["max"]))
+    self.assertTrue(math.isnan(omputedStats["min"]))
     
 
   def test_raise_alerts_when_max_above_threshold(self):
