@@ -14,7 +14,7 @@ class LEDAlert:
     self.ledGlows = True
     
 class StatsAlerter:
-  def __init__(self,float:threshold,list:alerts):
+  def __init__(self,threshold,list:alerts):
     self.threshold = threshold
     self.alerts = alerts
   def checkAndAlert(self,list:numbers=[]):
