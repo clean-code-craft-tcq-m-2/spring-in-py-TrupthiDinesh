@@ -23,7 +23,6 @@ class StatsAlerter:
       emailAlert = EmailAlert()
       emailAlert.sendEmail()
       ledAlert.glowLED()   
-  return None
     
 
 class StatsTest(unittest.TestCase):
