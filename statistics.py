@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 def calculateStats(numbers):
   df = pd.DataFrame(numbers, columns=['numbers'])
