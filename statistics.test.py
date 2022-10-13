@@ -13,7 +13,7 @@ class LEDAlert:
   def glowLED():
     self.ledGlows = True
     
-class StatsAlerter():
+class StatsAlerter:
   def __init__(self,float:maxThreshold=0,list:alerts=[]):
     self.maxThreshold = maxThreshold
     self.alerts = alerts
@@ -23,6 +23,7 @@ class StatsAlerter():
       emailAlert = EmailAlert()
       emailAlert.sendEmail()
       ledAlert.glowLED()   
+  return None
     
 
 class StatsTest(unittest.TestCase):
