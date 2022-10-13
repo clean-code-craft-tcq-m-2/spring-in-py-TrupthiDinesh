@@ -1,10 +1,10 @@
-
+import math
 def calculateStats(numbers):
   computedStats = {}
   if len(numbers) == 0:
-    computedStats["avg"] = nan
-    computedStats["max"] = nan
-    computedStats["min"] = nan
+    computedStats["avg"] = math.nan
+    computedStats["max"] = math.nan
+    computedStats["min"] = math.nan
   
   computedStats["avg"] = sum(numbers)/len(numbers)
   computedStats["max"] = max(numbers)
