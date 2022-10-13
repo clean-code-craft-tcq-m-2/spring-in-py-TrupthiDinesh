@@ -19,7 +19,7 @@ class StatsAlerter:
     self.alerts = alerts
   def checkAndAlert(self,numbers=[]):
     if numbers[1] > self.threshold:
-      for alert in alerts:
+      for alert in self.alerts:
         alert.alert()
         
     
