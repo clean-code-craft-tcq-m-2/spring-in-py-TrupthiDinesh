@@ -41,7 +41,7 @@ class StatsTest(unittest.TestCase):
     computedStats = statistics.calculateStats([])
     self.assertTrue(math.isnan(computedStats["avg"]))
     self.assertTrue(math.isnan(computedStats["max"]))
-    self.assertTrue(math.isnan(omputedStats["min"]))
+    self.assertTrue(math.isnan(computedStats["min"]))
     
 
   def test_raise_alerts_when_max_above_threshold(self):
