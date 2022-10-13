@@ -2,11 +2,11 @@ import unittest
 import statistics
 
 class EmailAlert():
-  def __init__(self,emailSent):
-    self.emailSent = True
+  def __init__(self,emailSent=True):
+    self.emailSent = emailSent
 class LEDAlert():
-  def __init__(self,emailSent):
-    self.ledGlows = True
+  def __init__(self,ledGlows=True):
+    self.ledGlows = ledGlows
 
 
 class StatsTest(unittest.TestCase):
