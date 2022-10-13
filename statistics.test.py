@@ -1,6 +1,14 @@
 import unittest
 import statistics
 
+class EmailAlert():
+  def __init__(self,emailSent):
+    self.emailSent = True
+class LEDAlert():
+  def __init__(self,emailSent):
+    self.ledGlows = True
+
+
 class StatsTest(unittest.TestCase):
   def test_report_min_max_avg(self):
     computedStats = statistics.calculateStats([1.5, 8.9, 3.2, 4.5])
