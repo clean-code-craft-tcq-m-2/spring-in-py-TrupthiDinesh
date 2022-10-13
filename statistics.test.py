@@ -21,8 +21,7 @@ class StatsAlerter:
   def checkAndAlert(self,numbers=[]):
     if numbers[1] > self.threshold:
       for alert in self.alerts:
-        print(alert):
-        
+        print(alert)        
     
 
 class StatsTest(unittest.TestCase):
