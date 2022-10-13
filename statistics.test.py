@@ -1,21 +1,21 @@
 import unittest
 import statistics
 
-public static class EmailAlert():
+class EmailAlert():
   public emailSent = False
   def __init__(self,emailSent=False):
     self.emailSent = emailSent
   def sendEmail():
     self.emailSent=True
     
-public static class LEDAlert():
+class LEDAlert():
   public ledGlows = False
   def __init__(self,ledGlows=False):
     self.ledGlows = ledGlows
   def glowLED():
     self.ledGlows = True
     
-public static class StatsAlerter():
+class StatsAlerter():
   def __init__(self,int:maxThreshold=0,list:alerts=[]):
     self.maxThreshold = maxThreshold
     self.alerts = alerts
