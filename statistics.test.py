@@ -14,10 +14,10 @@ class LEDAlert:
     self.ledGlows = True
     
 class StatsAlerter():
-  def __init__(self,int:maxThreshold=0,list:alerts=[]):
+  def __init__(self,float:maxThreshold=0,list:alerts=[]):
     self.maxThreshold = maxThreshold
     self.alerts = alerts
-  def checkAndAlert(list:numbers=[]):
+  def checkAndAlert(self,list:numbers=[]):
     if numbers[1] > self.maxThreshold:
       ledAlert = LEDAlert()
       emailAlert = EmailAlert()
