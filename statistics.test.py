@@ -1,15 +1,13 @@
 import unittest
 import statistics
 
-class EmailAlert():
-  public emailSent = False
+class EmailAlert:
   def __init__(self,emailSent=False):
     self.emailSent = emailSent
   def sendEmail():
     self.emailSent=True
     
-class LEDAlert():
-  public ledGlows = False
+class LEDAlert:
   def __init__(self,ledGlows=False):
     self.ledGlows = ledGlows
   def glowLED():
