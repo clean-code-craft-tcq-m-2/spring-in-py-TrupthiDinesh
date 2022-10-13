@@ -4,25 +4,24 @@ import statistics
 class EmailAlert:
   def __init__(self,emailSent=False):
     self.emailSent = emailSent
-  def sendEmail():
+  def alert():
     self.emailSent=True
     
 class LEDAlert:
   def __init__(self,ledGlows=False):
     self.ledGlows = ledGlows
-  def glowLED():
+  def alert():
     self.ledGlows = True
     
 class StatsAlerter:
-  def __init__(self,float:maxThreshold=0,list:alerts=[]):
-    self.maxThreshold = maxThreshold
+  def __init__(self,float:threshold,list:alerts):
+    self.threshold = threshold
     self.alerts = alerts
   def checkAndAlert(self,list:numbers=[]):
-    if numbers[1] > self.maxThreshold:
-      ledAlert = LEDAlert()
-      emailAlert = EmailAlert()
-      emailAlert.sendEmail()
-      ledAlert.glowLED()   
+    if numbers[1] > self.threshold:
+      for alert in alerts:
+        alert.alert()
+        
     
 
 class StatsTest(unittest.TestCase):
